@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80");
+}
+
+.container {
+    height: 420px;
+    width: 350px;
+    /*border: 1px solid black;*/
+    background: white;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    box-shadow: 0px 0px 15px 0px black;
+}
+
+.chat-header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    background-color:#116dff;
+    color:white;
+    font-size: 1.5rem
+}
+
+.chat-header .logo {
+    height: 35px;
+    width: 35px;
+}
+
+.chat-header img {
+    height: 100%;
+    width:  100%;
+    margin-left: -12px;
+}
+
+.chat-header .title {
+    padding-left: 30px;
+}
+
+.chat-body {                         /*CHAT BODY*/
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: scroll;
+    scroll-behavior: auto;        /* TODO scroll behavior*/
+}
+
+.chat-input {                          
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    
+}
+
+
+.input-sec {
+    flex: 9;
+}
+
+.send {
+    flex: 1;
+    padding-right: 4px;
+}
+
+
+#txtinput {
+    line-height: 30px;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    caret-color: black;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.chat-input img {
+    height: 100%;
+    width:  100%;
+    cursor: pointer;
+}
+
+
+.msg-user {
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: calc(100% - 200px);
+    padding: 10px;
+    background-color: rgb(0, 219, 11);
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font: 400 .9em 'Open Sans', sans-serif;
+    border: 1px solid rgb(0, 219, 11);
+    border-radius: 10px;
+}
+
+.msg-robot {
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: rgb(216, 216, 216);
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font: 400 .9em 'Open Sans', sans-serif;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 10px;
+}
+
+.quest-list {
+    width: 400px;
+    height: 100%;
+    color: white;
+    text-align: center;
+    text-overflow: ellipsis;
+    float: left;
+}
+
+h2 {
+    padding: 30px;
+}
+
+.created-quest {
+    width: 400px;
+    height: 400px;
+    margin-left: 45%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#quest, #answer {
+    margin-left: 40px;
+    line-height: 30px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    width: 316px;
+}
+
+#btn-newQuest {
+    background-color: #116dff;
+    color: white;
+    padding: 8px;
+    margin-right: 20px;
+    border-radius: 7px;
+    border: none;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 316px;
+}
